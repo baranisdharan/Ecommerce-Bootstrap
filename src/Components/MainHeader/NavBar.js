@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
-const NavBar = () => {
+const NavBar = ({ toggleCart }) => {
   return (
     <>
       <Navbar bg="dark" variant="dark">
@@ -14,7 +14,7 @@ const NavBar = () => {
             <Nav.Link href="#features">STORE</Nav.Link>
             <Nav.Link href="#pricing">ABOUT</Nav.Link>
           </Nav>
-          <Button variant="primary">CART 3</Button>{" "}
+          <Button variant="primary" onClick={toggleCart}>CART</Button>{" "}
         </Container>
       </Navbar>
     </>
