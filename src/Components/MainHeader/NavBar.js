@@ -17,6 +17,7 @@ const NavBar = ({ toggleCart }) => {
             <Nav.Link href="/home" className="nav-link">HOME</Nav.Link>
             <NavLink to="/" className="nav-link">STORE</NavLink>
             <NavLink to="/about" className="nav-link">ABOUT</NavLink>
+            <NavLink to="/contact" className="nav-link">CONTACT US</NavLink>
           </Nav>
           <Button variant="primary" onClick={toggleCart}>CART-{cartItems.length}</Button>{" "}
         </Container>
