@@ -7,8 +7,8 @@ const AboutPage = () => {
     <>
       <NavBar />
       <Header />
-      <Card>
-        <Card.Title className=" text-center">About</Card.Title>
+      <Card style={{ width: "50rem" }} className="shadow-lg mx-auto mt-3">
+        <Card.Title className="shadow-lg mx-auto mt-3">About</Card.Title>
         <Card.Body>
           Lorem ipsum carrots enhanced rebates. Excellent sayings of a man of
           sorrows, hates no prosecutors will unfold in the enduring of which

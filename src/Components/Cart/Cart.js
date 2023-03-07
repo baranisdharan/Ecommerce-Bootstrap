@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import { CartContext } from "./CartContext";
 import { CartProvider } from "./CartProvider";
+import NavBar from "../MainHeader/NavBar";
 
 const Cart = (props) => {
   const cartCtx = useContext(CartContext);
@@ -21,6 +22,7 @@ const Cart = (props) => {
 
   return (
     <CartProvider>
+      <NavBar/>
       <h3 as="h1" className="text-center mt-3">
         Cart</h3>
         <Button variant="primary" className="text-center mt-3">
