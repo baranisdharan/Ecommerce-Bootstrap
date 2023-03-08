@@ -5,12 +5,14 @@ import Store from "./Store";
 
 import Home from "./Home";
 import Contact from "./Contact";
+import ProductPage from "./Components/ProductPages/ProductPage";
 
 const router = createBrowserRouter([
   { path: "/", element: <Store /> },
   { path: "/about", element: <AboutPage /> },
   { path: "/home", element: <Home /> },
   { path: "/contact", element: <Contact /> },
+  { path: "/product/:id", element: <ProductPage /> },
 ]);
 
 const App = () => {

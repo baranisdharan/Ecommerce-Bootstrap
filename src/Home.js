@@ -10,7 +10,7 @@ const Home = () => {
     <>
       <NavBar />
       <Header />
-      
+
       <Card style={{ width: "50rem" }} className="shadow-lg mx-auto mt-3">
         <Card.Title className=" text-center">TOURS</Card.Title>
         <Table striped bordered>
@@ -28,7 +28,7 @@ const Home = () => {
               <td>DETROIT, MI</td>
               <td>DTE ENERGY MUSIC THEATRE</td>
               <td>
-              <Button variant="info">BUY TICKETS</Button>{' '}
+                <Button variant="info">BUY TICKETS</Button>{" "}
               </td>
             </tr>
             <tr>
@@ -36,7 +36,7 @@ const Home = () => {
               <td>TORONTO, ON</td>
               <td>BUDWEISER STAGE</td>
               <td>
-              <Button variant="info">BUY TICKETS</Button>{' '}
+                <Button variant="info">BUY TICKETS</Button>{" "}
               </td>
             </tr>
             <tr>
@@ -44,7 +44,7 @@ const Home = () => {
               <td>BRISTOW, VA</td>
               <td>JIGGY LUBE LIVE</td>
               <td>
-              <Button variant="info">BUY TICKETS</Button>{' '}
+                <Button variant="info">BUY TICKETS</Button>{" "}
               </td>
             </tr>
             <tr>
@@ -52,7 +52,7 @@ const Home = () => {
               <td>PHOENIX, AZ</td>
               <td>AK-CHIN PAVILION</td>
               <td>
-              <Button variant="info">BUY TICKETS</Button>{' '}
+                <Button variant="info">BUY TICKETS</Button>{" "}
               </td>
             </tr>
             <tr>
@@ -60,7 +60,7 @@ const Home = () => {
               <td>LAS VEGAS, NV</td>
               <td>T-MOBILE ARENA</td>
               <td>
-              <Button variant="info">BUY TICKETS</Button>{' '}
+                <Button variant="info">BUY TICKETS</Button>{" "}
               </td>
             </tr>
             <tr>
@@ -68,12 +68,12 @@ const Home = () => {
               <td>CONCORD, CA</td>
               <td>AK-CHIN PAVILION</td>
               <td>
-              <Button variant="info">BUY TICKETS</Button>{' '}
+                <Button variant="info">BUY TICKETS</Button>{" "}
               </td>
             </tr>
           </tbody>
         </Table>
-        </Card>
+      </Card>
     </>
   );
 };

@@ -5,29 +5,8 @@ import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import { useContext } from "react";
 import { CartContext } from "../Cart/CartContext";
-
-const productsArr = [
-  {
-    title: "Colors",
-    price: 100,
-    imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%201.png",
-  },
-  {
-    title: "Black and white Colors",
-    price: 50,
-    imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%202.png",
-  },
-  {
-    title: "Yellow and Black Colors",
-    price: 70,
-    imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%203.png",
-  },
-  {
-    title: "Blue Color",
-    price: 100,
-    imageUrl: "https://prasadyash2411.github.io/ecom-website/img/Album%204.png",
-  },
-];
+import { Link } from "react-router-dom";
+import productsArr from "./ProductsData";
 
 const ProductsOnScreen = () => {
   const { addToCart } = useContext(CartContext);
@@ -36,9 +15,12 @@ const ProductsOnScreen = () => {
     <Row xs={1} md={2} className="g-4 mt-3 ms-5">
       {productsArr.map((product, idx) => (
         <Col key={idx}>
-          <Card style={{ width: "25rem" }} className="shadow-lg">
-            <Card.Title className="text-center p-3" as="h4">{product.title}</Card.Title>
+          <Card style={{ width: "18rem" }} className="shadow-lg mx-auto">
+            <Card.Title className="text-center p-3" as="h4">
+              <Link to={`/product/${idx}`}>{product.title}</Link>
+            </Card.Title>
             <Card.Img variant="top" src={product.imageUrl} />
+
             <Card.Body>
               <Card.Text as="h4">${product.price}</Card.Text>
               <Button onClick={() => addToCart(product)}>Add to Cart</Button>
