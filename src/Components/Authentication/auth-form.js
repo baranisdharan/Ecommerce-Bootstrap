@@ -60,7 +60,7 @@ const AuthForm = () => {
       })
       .then((data) => {
         authCtx.login(data.idToken);
-        navigate("/");
+        navigate("/store");
       })
       .catch((err) => {
         alert(err.message);

@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import productsArr from "../Body/ProductsData";
+import productsArr from "./ProductsData";
 import NavBar from "../MainNavigation/NavBar";
 import { useNavigate } from "react-router-dom";
 
@@ -9,7 +9,7 @@ const ProductPage = () => {
   const product = productsArr[id];
 
   const backToPage = () => {
-    navigate("/");
+    navigate("/store");
   };
 
   return (
