@@ -15,7 +15,7 @@ const NavBar = ({ toggleCart }) => {
         <Container>
           <Nav className="me-auto">
             <NavLink to="/home" className="nav-link">HOME</NavLink>
-            <NavLink to="/" className="nav-link">STORE</NavLink>
+            <NavLink to="/store" className="nav-link">STORE</NavLink>
             <NavLink to="/about" className="nav-link">ABOUT</NavLink>
             <NavLink to="/contact" className="nav-link">CONTACT US</NavLink>
           </Nav>

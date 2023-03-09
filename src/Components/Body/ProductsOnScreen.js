@@ -20,7 +20,6 @@ const ProductsOnScreen = () => {
               <Link to={`/product/${idx}`}>{product.title}</Link>
             </Card.Title>
             <Card.Img variant="top" src={product.imageUrl} />
-
             <Card.Body>
               <Card.Text as="h4">${product.price}</Card.Text>
               <Button onClick={() => addToCart(product)}>Add to Cart</Button>

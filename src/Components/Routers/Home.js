@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "./Components/MainHeader/Header";
-import NavBar from "./Components/MainHeader/NavBar";
+import Header from "../MainNavigation/Header";
+import NavBar from "../MainNavigation/NavBar";
 import Table from "react-bootstrap/Table";
 import Card from "react-bootstrap/Card";
 import { Button } from "react-bootstrap";

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import NavBar from "./Components/MainHeader/NavBar";
-import Header from "./Components/MainHeader/Header";
-import ProductsOnScreen from "./Components/Layout/ProductsOnScreen";
-import Cart from "./Components/Cart/Cart";
-import { CartProvider } from "./Components/Cart/CartProvider";
+import NavBar from "../MainNavigation/NavBar";
+import Header from "../MainNavigation/Header";
+import ProductsOnScreen from "../Body/ProductsOnScreen";
+import Cart from "../Cart/Cart";
+import { CartProvider } from "../Cart/CartProvider";
 
 const Store = () => {
   const [cartOpen, setCartOpen] = useState(false);

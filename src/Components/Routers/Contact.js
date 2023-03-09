@@ -4,7 +4,7 @@ import FloatingLabel from "react-bootstrap/FloatingLabel"; // Import FloatingLab
 
 import { useState } from "react";
 import Card from "react-bootstrap/Card";
-import NavBar from "./Components/MainHeader/NavBar";
+import NavBar from "../MainNavigation/NavBar";
 
 const Contact = () => {
   const [name, setName] = useState("");

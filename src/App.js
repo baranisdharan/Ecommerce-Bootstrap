@@ -1,22 +1,26 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
+import { Routes, Route} from "react-router-dom";
 import AboutPage from "./Components/Routers/AboutPage";
-import Store from "./Store";
+import Store from "./Components/Routers/Store";
 
-import Home from "./Home";
-import Contact from "./Contact";
+import Home from "./Components/Routers/Home";
+import Contact from "./Components/Routers/Contact";
 import ProductPage from "./Components/ProductPages/ProductPage";
-
-const router = createBrowserRouter([
-  { path: "/", element: <Store /> },
-  { path: "/about", element: <AboutPage /> },
-  { path: "/home", element: <Home /> },
-  { path: "/contact", element: <Contact /> },
-  { path: "/product/:id", element: <ProductPage /> },
-]);
+import Layout from "./Components/MainNavigation/Layout";
+import AuthForm from "./Components/Authentication/auth-form";
 
 const App = () => {
-  return <RouterProvider router={router}></RouterProvider>;
+  return (
+    <Layout>
+      <Routes>
+        <Route path="/" element={<AuthForm />} />
+        <Route path="/store" element={<Store />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/product/:id" element={<ProductPage />} />
+      </Routes>
+    </Layout>
+  );
 };
 
 export default App;
